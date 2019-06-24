@@ -37,15 +37,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
         <RadioButton
-            android:id="@+id/rb_home"
-            android:text="首页"
+            android:id="@+id/rb_shj"
+            android:text="上海黄金交易所"
             style="@style/style_RadioButton"
             android:checked="true"
-            android:drawableTop="@drawable/rb_home_selector"
+            android:drawableTop="@drawable/rb_data_selector"
             android:textColor="@drawable/rb_text_selector"/>
         <RadioButton
-            android:id="@+id/rb_data"
-            android:text="数据"
+            android:id="@+id/rb_sqj"
+            android:text="上海期货交易所"
+            style="@style/style_RadioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_data_selector"
+            android:textColor="@drawable/rb_text_selector"/>
+        <RadioButton
+            android:id="@+id/rb_yzh"
+            android:text="银行账户黄金"
             style="@style/style_RadioButton"
             android:checked="true"
             android:drawableTop="@drawable/rb_data_selector"

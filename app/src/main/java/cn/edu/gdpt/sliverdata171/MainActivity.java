@@ -11,9 +11,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.edu.gdpt.sliverdata171.Fragment.DataFragment;
-import cn.edu.gdpt.sliverdata171.Fragment.HomeFragment;
+import cn.edu.gdpt.sliverdata171.Fragment.SQJFragment;
+import cn.edu.gdpt.sliverdata171.Fragment.SHJFragment;
 import cn.edu.gdpt.sliverdata171.Fragment.MeFragment;
+import cn.edu.gdpt.sliverdata171.Fragment.YZHFragment;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tv_main_title;
@@ -34,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
         radioGroup=(RadioGroup)findViewById(R.id.radiogroup);
     }
     private void setViewPager(){
-        fragments.add(new HomeFragment());
-        fragments.add(new DataFragment());
+        fragments.add(new SHJFragment());
+        fragments.add(new SQJFragment());
+        fragments.add(new YZHFragment());
         fragments.add(new MeFragment());
         viewPager.setOffscreenPageLimit(4);
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
@@ -62,14 +64,18 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int i) {
                 switch (i){
                     case 0:
-                        radioGroup.check(R.id.rb_home);
-                        tv_main_title.setText("首页");
+                        radioGroup.check(R.id.rb_shj);
+                        tv_main_title.setText("上海黄金交易所");
                         break;
                     case 1:
-                        radioGroup.check(R.id.rb_data);
-                        tv_main_title.setText("数据");
+                        radioGroup.check(R.id.rb_sqj);
+                        tv_main_title.setText("上海期货交易所");
                         break;
                     case 2:
+                        radioGroup.check(R.id.rb_yzh);
+                        tv_main_title.setText("银行账户黄金");
+                        break;
+                    case 3:
                         radioGroup.check(R.id.rb_me);
                         tv_main_title.setText("我的");
                         break;
@@ -86,12 +92,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int i) {
                 switch (i){
-                    case R.id.rb_home:
+                    case R.id.rb_shj:
                         viewPager.setCurrentItem(0,false);break;
-                    case R.id.rb_data:
+                    case R.id.rb_sqj:
                         viewPager.setCurrentItem(1,false);break;
-                    case R.id.rb_me:
+                    case R.id.rb_yzh:
                         viewPager.setCurrentItem(2,false);break;
+                    case R.id.rb_me:
+                        viewPager.setCurrentItem(3,false);break;
                 }
             }
         });
