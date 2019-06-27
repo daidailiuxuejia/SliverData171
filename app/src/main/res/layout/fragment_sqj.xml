@@ -6,9 +6,10 @@
     tools:context=".Fragment.SQJFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="2" />
+        android:id="@+id/listview1">
 
+    </ListView>
 </FrameLayout>

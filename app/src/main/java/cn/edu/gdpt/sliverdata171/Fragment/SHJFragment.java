@@ -1,14 +1,17 @@
 package cn.edu.gdpt.sliverdata171.Fragment;
 
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -22,32 +25,36 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import net.sf.json.JSONObject;
-
 import cn.edu.gdpt.sliverdata171.Bean.SliverBean;
 import cn.edu.gdpt.sliverdata171.R;
+import cn.edu.gdpt.sliverdata171.SliverListAdapter;
+import cn.edu.gdpt.sliverdata171.Sqlite.JsonParse;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-@SuppressLint("ValidFragment")
+
 public class SHJFragment extends Fragment {
+
     public static final String DEF_CHATSET = "UTF-8";
     public static final int DEF_CONN_TIMEOUT = 30000;
     public static final int DEF_READ_TIMEOUT = 30000;
     public static String userAgent =  "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36";
+    public static String resultjson;
+    public static SliverListAdapter adapter;
+    private RecyclerView recyclerView;
+
+    //配置您申请的KEY
     public static final String APPKEY ="12694247ffec57596dccee6e454a7e47";
-    private SliverBean.ResultEntity sliverBean;
-    private View view;
-    private TextView type,latestpri,openpri,maxpri,minpri,limit,yespri,totalvol;
-    private ImageView latestpri_icon,openpri_icon,maxpri_icon,minpri_icon,limit_icon,yespri_icon,totalvol_icon;
-    private RelativeLayout lin1,lin2,lin3,lin4,lin5,lin6,lin7,lin8;
-    @SuppressLint("ValidFragment")
-    public SHJFragment(SliverBean.ResultEntity info) {
+
+
+    public SHJFragment() {
         // Required empty public constructor
-        this.sliverBean=info;
+        ;
     }
 
 
@@ -55,21 +62,36 @@ public class SHJFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shj, container, false);
-
+       View view= inflater.inflate(R.layout.fragment_shj, container, false);
+        adapter=new SliverListAdapter();
+       getRequest1();
+       initView(view);
+        return view;
     }
-    public static void getRequest1(){
+    private void initView(View view){
+        recyclerView=(RecyclerView) view.findViewById(R.id.recyclerview);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(adapter);
+    }
+
+
+    //1.上海黄金交易所
+    public static void getRequest1() {
         String result =null;
         String url ="http://web.juhe.cn:8080/finance/gold/shgold";//请求接口地址
         Map params = new HashMap();//请求参数
         params.put("key",APPKEY);//APP Key
-        params.put("v","1");//JSON格式版本(0或1)默认为0
+        params.put("v","0");//JSON格式版本(0或1)默认为0
 
         try {
             result =net(url, params, "GET");
             JSONObject object = JSONObject.fromObject(result);
             if(object.getInt("error_code")==0){
                 System.out.println(object.get("result"));
+                resultjson=(String)object.get(result);
+                Log.i("ok",resultjson);
+                List<SliverBean.ResultBean> sliverList=JsonParse.getInstance().getSliverList(resultjson);
+                adapter.setData(sliverList);
             }else{
                 System.out.println(object.get("error_code")+":"+object.get("reason"));
             }
@@ -153,5 +175,8 @@ public class SHJFragment extends Fragment {
         return sb.toString();
     }
 }
+
+
+
 
 
