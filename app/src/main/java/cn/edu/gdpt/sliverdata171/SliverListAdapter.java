@@ -41,7 +41,7 @@ public class SliverListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     @Override
     public int getItemCount() {
-        return sbl == null ? 0 :sbl.size();
+        return sbl.size();
     }
     public class SliverViewHolder extends RecyclerView.ViewHolder{
         public TextView type, latestpri, openpri, maxpri, minpri, limit, yespri, totalvol,time;

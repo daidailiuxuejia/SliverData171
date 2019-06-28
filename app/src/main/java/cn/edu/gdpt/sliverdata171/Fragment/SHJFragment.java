@@ -63,16 +63,18 @@ public class SHJFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        View view= inflater.inflate(R.layout.fragment_shj, container, false);
+        getRequest1();
+        recyclerView=(RecyclerView) view.findViewById(R.id.recyclerview);
+        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity());
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(linearLayoutManager);
         adapter=new SliverListAdapter();
-       getRequest1();
-       initView(view);
+        recyclerView.setAdapter(adapter);
+
+
         return view;
     }
-    private void initView(View view){
-        recyclerView=(RecyclerView) view.findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(adapter);
-    }
+
 
 
     //1.上海黄金交易所
