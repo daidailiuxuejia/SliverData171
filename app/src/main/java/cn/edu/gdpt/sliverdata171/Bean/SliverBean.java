@@ -6,11 +6,10 @@ import java.util.List;
 
 public class SliverBean {
 
-
     /**
      * resultcode : 200
      * reason : SUCCESSED!
-     * result : [{"1":{"variety":"Au100g","latestpri":"314.00","openpri":"312.49","maxpri":"315.49","minpri":"312.49","limit":"-0.10%","yespri":"314.31","totalvol":"382.00","time":"2019-06-27 15:28:25"},"2":{"variety":"Au(T+N1)","latestpri":"318.85","openpri":"316.75","maxpri":"320.60","minpri":"316.75","limit":"-0.16%","yespri":"319.35","totalvol":"2278.00","time":"2019-06-27 15:30:03"},"3":{"variety":"Au(T+D)","latestpri":"313.33","openpri":"313.50","maxpri":"315.79","minpri":"312.90","limit":"-0.43%","yespri":"314.69","totalvol":"121610.00","time":"2019-06-27 15:30:03"},"4":{"variety":"Au99.99","latestpri":"314.00","openpri":"315.00","maxpri":"316.00","minpri":"312.00","limit":"-0.14%","yespri":"314.44","totalvol":"164721.00","time":"2019-06-27 15:30:03"},"5":{"variety":"Au99.95","latestpri":"313.10","openpri":"314.40","maxpri":"314.60","minpri":"313.00","limit":"-0.41%","yespri":"314.40","totalvol":"666.00","time":"2019-06-27 15:30:03"},"6":{"variety":"Au50g","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"255.00","totalvol":"--","time":"2019-06-27 15:30:03"},"7":{"variety":"Ag99.99","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"3677.00","totalvol":"--","time":"2019-06-26 20:00:00"},"8":{"variety":"Ag(T+D)","latestpri":"3635.00","openpri":"3643.00","maxpri":"3661.00","minpri":"3629.00","limit":"-0.36%","yespri":"3648.00","totalvol":"2894446.00","time":"2019-06-27 15:30:03"},"9":{"variety":"Au(T+N2)","latestpri":"315.60","openpri":"315.90","maxpri":"318.20","minpri":"315.60","limit":"-0.60%","yespri":"317.50","totalvol":"6726.00","time":"2019-06-27 15:30:03"},"10":{"variety":"Pt99.95","latestpri":"186.15","openpri":"186.57","maxpri":"186.57","minpri":"186.00","limit":"0.65%","yespri":"184.94","totalvol":"86.00","time":"2019-06-27 15:08:17"},"11":{"variety":"AU995","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"271.60","totalvol":"--","time":"2019-06-26 20:00:00"},"12":{"variety":"AU99.99","latestpri":"314.00","openpri":"315.00","maxpri":"316.00","minpri":"312.00","limit":"-0.14%","yespri":"314.44","totalvol":"1647210.00","time":"2019-06-27 15:30:03"},"13":{"variety":"MAUTD","latestpri":"313.15","openpri":"313.63","maxpri":"315.95","minpri":"312.88","limit":"-0.50%","yespri":"314.71","totalvol":"136944.00","time":"2019-06-27 15:30:03"},"14":{"variety":"IAU99.99","latestpri":"310.35","openpri":"311.00","maxpri":"312.20","minpri":"310.35","limit":"-0.37%","yespri":"311.49","totalvol":"104454.00","time":"2019-06-27 15:11:14"},"15":{"variety":"IAU100G","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"280.00","totalvol":"--","time":"2019-06-27 15:27:22"},"16":{"variety":"IAU99.5","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"237.80","totalvol":"--","time":"2019-06-26 20:00:00"}}]
+     * result : [{"1":{"variety":"Au100g","latestpri":"315.00","openpri":"313.00","maxpri":"315.00","minpri":"312.21","limit":"0.34%","yespri":"313.93","totalvol":"68.00","time":"2019-06-27 23:43:08"},"2":{"variety":"Au(T+N1)","latestpri":"319.20","openpri":"318.80","maxpri":"319.20","minpri":"317.60","limit":"0.30%","yespri":"318.25","totalvol":"986.00","time":"2019-06-27 23:43:11"},"3":{"variety":"Au(T+D)","latestpri":"313.38","openpri":"313.28","maxpri":"313.85","minpri":"312.05","limit":"0.02%","yespri":"313.31","totalvol":"43096.00","time":"2019-06-27 23:43:07"},"4":{"variety":"Au99.99","latestpri":"313.00","openpri":"312.10","maxpri":"315.00","minpri":"312.10","limit":"-0.28%","yespri":"313.89","totalvol":"15421.00","time":"2019-06-27 23:42:25"},"5":{"variety":"Au99.95","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"313.29","totalvol":"--","time":"2019-06-27 23:30:08"},"6":{"variety":"Au50g","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"255.00","totalvol":"--","time":"2019-06-27 19:50:01"},"7":{"variety":"Ag99.99","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"3677.00","totalvol":"--","time":"2019-06-27 19:50:01"},"8":{"variety":"Ag(T+D)","latestpri":"3632.00","openpri":"3631.00","maxpri":"3644.00","minpri":"3625.00","limit":"-0.06%","yespri":"3634.00","totalvol":"1053762.00","time":"2019-06-27 23:43:15"},"9":{"variety":"Au(T+N2)","latestpri":"316.60","openpri":"315.85","maxpri":"316.65","minpri":"314.75","limit":"0.29%","yespri":"315.70","totalvol":"13078.00","time":"2019-06-27 23:41:01"},"10":{"variety":"Pt99.95","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"186.14","totalvol":"--","time":"2019-06-27 23:20:34"},"11":{"variety":"AU995","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"271.60","totalvol":"--","time":"2019-06-27 19:50:01"},"12":{"variety":"AU99.99","latestpri":"313.00","openpri":"312.10","maxpri":"315.00","minpri":"312.10","limit":"-0.28%","yespri":"313.89","totalvol":"154210.00","time":"2019-06-27 23:42:25"},"13":{"variety":"MAUTD","latestpri":"313.45","openpri":"313.08","maxpri":"313.79","minpri":"312.00","limit":"0.07%","yespri":"313.23","totalvol":"55604.00","time":"2019-06-27 23:43:15"},"14":{"variety":"IAU99.99","latestpri":"310.00","openpri":"312.00","maxpri":"312.00","minpri":"310.00","limit":"-0.47%","yespri":"311.47","totalvol":"80.00","time":"2019-06-27 23:43:13"},"15":{"variety":"IAU100G","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"280.00","totalvol":"--","time":"2019-06-27 22:12:23"},"16":{"variety":"IAU99.5","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"237.80","totalvol":"--","time":"2019-06-27 19:50:01"}}]
      * error_code : 0
      */
 
@@ -53,22 +52,22 @@ public class SliverBean {
 
     public static class ResultBean {
         /**
-         * 1 : {"variety":"Au100g","latestpri":"314.00","openpri":"312.49","maxpri":"315.49","minpri":"312.49","limit":"-0.10%","yespri":"314.31","totalvol":"382.00","time":"2019-06-27 15:28:25"}
-         * 2 : {"variety":"Au(T+N1)","latestpri":"318.85","openpri":"316.75","maxpri":"320.60","minpri":"316.75","limit":"-0.16%","yespri":"319.35","totalvol":"2278.00","time":"2019-06-27 15:30:03"}
-         * 3 : {"variety":"Au(T+D)","latestpri":"313.33","openpri":"313.50","maxpri":"315.79","minpri":"312.90","limit":"-0.43%","yespri":"314.69","totalvol":"121610.00","time":"2019-06-27 15:30:03"}
-         * 4 : {"variety":"Au99.99","latestpri":"314.00","openpri":"315.00","maxpri":"316.00","minpri":"312.00","limit":"-0.14%","yespri":"314.44","totalvol":"164721.00","time":"2019-06-27 15:30:03"}
-         * 5 : {"variety":"Au99.95","latestpri":"313.10","openpri":"314.40","maxpri":"314.60","minpri":"313.00","limit":"-0.41%","yespri":"314.40","totalvol":"666.00","time":"2019-06-27 15:30:03"}
-         * 6 : {"variety":"Au50g","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"255.00","totalvol":"--","time":"2019-06-27 15:30:03"}
-         * 7 : {"variety":"Ag99.99","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"3677.00","totalvol":"--","time":"2019-06-26 20:00:00"}
-         * 8 : {"variety":"Ag(T+D)","latestpri":"3635.00","openpri":"3643.00","maxpri":"3661.00","minpri":"3629.00","limit":"-0.36%","yespri":"3648.00","totalvol":"2894446.00","time":"2019-06-27 15:30:03"}
-         * 9 : {"variety":"Au(T+N2)","latestpri":"315.60","openpri":"315.90","maxpri":"318.20","minpri":"315.60","limit":"-0.60%","yespri":"317.50","totalvol":"6726.00","time":"2019-06-27 15:30:03"}
-         * 10 : {"variety":"Pt99.95","latestpri":"186.15","openpri":"186.57","maxpri":"186.57","minpri":"186.00","limit":"0.65%","yespri":"184.94","totalvol":"86.00","time":"2019-06-27 15:08:17"}
-         * 11 : {"variety":"AU995","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"271.60","totalvol":"--","time":"2019-06-26 20:00:00"}
-         * 12 : {"variety":"AU99.99","latestpri":"314.00","openpri":"315.00","maxpri":"316.00","minpri":"312.00","limit":"-0.14%","yespri":"314.44","totalvol":"1647210.00","time":"2019-06-27 15:30:03"}
-         * 13 : {"variety":"MAUTD","latestpri":"313.15","openpri":"313.63","maxpri":"315.95","minpri":"312.88","limit":"-0.50%","yespri":"314.71","totalvol":"136944.00","time":"2019-06-27 15:30:03"}
-         * 14 : {"variety":"IAU99.99","latestpri":"310.35","openpri":"311.00","maxpri":"312.20","minpri":"310.35","limit":"-0.37%","yespri":"311.49","totalvol":"104454.00","time":"2019-06-27 15:11:14"}
-         * 15 : {"variety":"IAU100G","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"280.00","totalvol":"--","time":"2019-06-27 15:27:22"}
-         * 16 : {"variety":"IAU99.5","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"237.80","totalvol":"--","time":"2019-06-26 20:00:00"}
+         * 1 : {"variety":"Au100g","latestpri":"315.00","openpri":"313.00","maxpri":"315.00","minpri":"312.21","limit":"0.34%","yespri":"313.93","totalvol":"68.00","time":"2019-06-27 23:43:08"}
+         * 2 : {"variety":"Au(T+N1)","latestpri":"319.20","openpri":"318.80","maxpri":"319.20","minpri":"317.60","limit":"0.30%","yespri":"318.25","totalvol":"986.00","time":"2019-06-27 23:43:11"}
+         * 3 : {"variety":"Au(T+D)","latestpri":"313.38","openpri":"313.28","maxpri":"313.85","minpri":"312.05","limit":"0.02%","yespri":"313.31","totalvol":"43096.00","time":"2019-06-27 23:43:07"}
+         * 4 : {"variety":"Au99.99","latestpri":"313.00","openpri":"312.10","maxpri":"315.00","minpri":"312.10","limit":"-0.28%","yespri":"313.89","totalvol":"15421.00","time":"2019-06-27 23:42:25"}
+         * 5 : {"variety":"Au99.95","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"313.29","totalvol":"--","time":"2019-06-27 23:30:08"}
+         * 6 : {"variety":"Au50g","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"255.00","totalvol":"--","time":"2019-06-27 19:50:01"}
+         * 7 : {"variety":"Ag99.99","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"3677.00","totalvol":"--","time":"2019-06-27 19:50:01"}
+         * 8 : {"variety":"Ag(T+D)","latestpri":"3632.00","openpri":"3631.00","maxpri":"3644.00","minpri":"3625.00","limit":"-0.06%","yespri":"3634.00","totalvol":"1053762.00","time":"2019-06-27 23:43:15"}
+         * 9 : {"variety":"Au(T+N2)","latestpri":"316.60","openpri":"315.85","maxpri":"316.65","minpri":"314.75","limit":"0.29%","yespri":"315.70","totalvol":"13078.00","time":"2019-06-27 23:41:01"}
+         * 10 : {"variety":"Pt99.95","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"186.14","totalvol":"--","time":"2019-06-27 23:20:34"}
+         * 11 : {"variety":"AU995","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"271.60","totalvol":"--","time":"2019-06-27 19:50:01"}
+         * 12 : {"variety":"AU99.99","latestpri":"313.00","openpri":"312.10","maxpri":"315.00","minpri":"312.10","limit":"-0.28%","yespri":"313.89","totalvol":"154210.00","time":"2019-06-27 23:42:25"}
+         * 13 : {"variety":"MAUTD","latestpri":"313.45","openpri":"313.08","maxpri":"313.79","minpri":"312.00","limit":"0.07%","yespri":"313.23","totalvol":"55604.00","time":"2019-06-27 23:43:15"}
+         * 14 : {"variety":"IAU99.99","latestpri":"310.00","openpri":"312.00","maxpri":"312.00","minpri":"310.00","limit":"-0.47%","yespri":"311.47","totalvol":"80.00","time":"2019-06-27 23:43:13"}
+         * 15 : {"variety":"IAU100G","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"280.00","totalvol":"--","time":"2019-06-27 22:12:23"}
+         * 16 : {"variety":"IAU99.5","latestpri":"--","openpri":"--","maxpri":"--","minpri":"--","limit":"--","yespri":"237.80","totalvol":"--","time":"2019-06-27 19:50:01"}
          */
 
         @SerializedName("1")
@@ -235,14 +234,14 @@ public class SliverBean {
         public static class _$1Bean {
             /**
              * variety : Au100g
-             * latestpri : 314.00
-             * openpri : 312.49
-             * maxpri : 315.49
-             * minpri : 312.49
-             * limit : -0.10%
-             * yespri : 314.31
-             * totalvol : 382.00
-             * time : 2019-06-27 15:28:25
+             * latestpri : 315.00
+             * openpri : 313.00
+             * maxpri : 315.00
+             * minpri : 312.21
+             * limit : 0.34%
+             * yespri : 313.93
+             * totalvol : 68.00
+             * time : 2019-06-27 23:43:08
              */
 
             private String variety;
@@ -331,14 +330,14 @@ public class SliverBean {
         public static class _$2Bean {
             /**
              * variety : Au(T+N1)
-             * latestpri : 318.85
-             * openpri : 316.75
-             * maxpri : 320.60
-             * minpri : 316.75
-             * limit : -0.16%
-             * yespri : 319.35
-             * totalvol : 2278.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 319.20
+             * openpri : 318.80
+             * maxpri : 319.20
+             * minpri : 317.60
+             * limit : 0.30%
+             * yespri : 318.25
+             * totalvol : 986.00
+             * time : 2019-06-27 23:43:11
              */
 
             private String variety;
@@ -427,14 +426,14 @@ public class SliverBean {
         public static class _$3Bean {
             /**
              * variety : Au(T+D)
-             * latestpri : 313.33
-             * openpri : 313.50
-             * maxpri : 315.79
-             * minpri : 312.90
-             * limit : -0.43%
-             * yespri : 314.69
-             * totalvol : 121610.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 313.38
+             * openpri : 313.28
+             * maxpri : 313.85
+             * minpri : 312.05
+             * limit : 0.02%
+             * yespri : 313.31
+             * totalvol : 43096.00
+             * time : 2019-06-27 23:43:07
              */
 
             private String variety;
@@ -523,14 +522,14 @@ public class SliverBean {
         public static class _$4Bean {
             /**
              * variety : Au99.99
-             * latestpri : 314.00
-             * openpri : 315.00
-             * maxpri : 316.00
-             * minpri : 312.00
-             * limit : -0.14%
-             * yespri : 314.44
-             * totalvol : 164721.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 313.00
+             * openpri : 312.10
+             * maxpri : 315.00
+             * minpri : 312.10
+             * limit : -0.28%
+             * yespri : 313.89
+             * totalvol : 15421.00
+             * time : 2019-06-27 23:42:25
              */
 
             private String variety;
@@ -619,14 +618,14 @@ public class SliverBean {
         public static class _$5Bean {
             /**
              * variety : Au99.95
-             * latestpri : 313.10
-             * openpri : 314.40
-             * maxpri : 314.60
-             * minpri : 313.00
-             * limit : -0.41%
-             * yespri : 314.40
-             * totalvol : 666.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : --
+             * openpri : --
+             * maxpri : --
+             * minpri : --
+             * limit : --
+             * yespri : 313.29
+             * totalvol : --
+             * time : 2019-06-27 23:30:08
              */
 
             private String variety;
@@ -722,7 +721,7 @@ public class SliverBean {
              * limit : --
              * yespri : 255.00
              * totalvol : --
-             * time : 2019-06-27 15:30:03
+             * time : 2019-06-27 19:50:01
              */
 
             private String variety;
@@ -818,7 +817,7 @@ public class SliverBean {
              * limit : --
              * yespri : 3677.00
              * totalvol : --
-             * time : 2019-06-26 20:00:00
+             * time : 2019-06-27 19:50:01
              */
 
             private String variety;
@@ -907,14 +906,14 @@ public class SliverBean {
         public static class _$8Bean {
             /**
              * variety : Ag(T+D)
-             * latestpri : 3635.00
-             * openpri : 3643.00
-             * maxpri : 3661.00
-             * minpri : 3629.00
-             * limit : -0.36%
-             * yespri : 3648.00
-             * totalvol : 2894446.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 3632.00
+             * openpri : 3631.00
+             * maxpri : 3644.00
+             * minpri : 3625.00
+             * limit : -0.06%
+             * yespri : 3634.00
+             * totalvol : 1053762.00
+             * time : 2019-06-27 23:43:15
              */
 
             private String variety;
@@ -1003,14 +1002,14 @@ public class SliverBean {
         public static class _$9Bean {
             /**
              * variety : Au(T+N2)
-             * latestpri : 315.60
-             * openpri : 315.90
-             * maxpri : 318.20
-             * minpri : 315.60
-             * limit : -0.60%
-             * yespri : 317.50
-             * totalvol : 6726.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 316.60
+             * openpri : 315.85
+             * maxpri : 316.65
+             * minpri : 314.75
+             * limit : 0.29%
+             * yespri : 315.70
+             * totalvol : 13078.00
+             * time : 2019-06-27 23:41:01
              */
 
             private String variety;
@@ -1099,14 +1098,14 @@ public class SliverBean {
         public static class _$10Bean {
             /**
              * variety : Pt99.95
-             * latestpri : 186.15
-             * openpri : 186.57
-             * maxpri : 186.57
-             * minpri : 186.00
-             * limit : 0.65%
-             * yespri : 184.94
-             * totalvol : 86.00
-             * time : 2019-06-27 15:08:17
+             * latestpri : --
+             * openpri : --
+             * maxpri : --
+             * minpri : --
+             * limit : --
+             * yespri : 186.14
+             * totalvol : --
+             * time : 2019-06-27 23:20:34
              */
 
             private String variety;
@@ -1202,7 +1201,7 @@ public class SliverBean {
              * limit : --
              * yespri : 271.60
              * totalvol : --
-             * time : 2019-06-26 20:00:00
+             * time : 2019-06-27 19:50:01
              */
 
             private String variety;
@@ -1291,14 +1290,14 @@ public class SliverBean {
         public static class _$12Bean {
             /**
              * variety : AU99.99
-             * latestpri : 314.00
-             * openpri : 315.00
-             * maxpri : 316.00
-             * minpri : 312.00
-             * limit : -0.14%
-             * yespri : 314.44
-             * totalvol : 1647210.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 313.00
+             * openpri : 312.10
+             * maxpri : 315.00
+             * minpri : 312.10
+             * limit : -0.28%
+             * yespri : 313.89
+             * totalvol : 154210.00
+             * time : 2019-06-27 23:42:25
              */
 
             private String variety;
@@ -1387,14 +1386,14 @@ public class SliverBean {
         public static class _$13Bean {
             /**
              * variety : MAUTD
-             * latestpri : 313.15
-             * openpri : 313.63
-             * maxpri : 315.95
-             * minpri : 312.88
-             * limit : -0.50%
-             * yespri : 314.71
-             * totalvol : 136944.00
-             * time : 2019-06-27 15:30:03
+             * latestpri : 313.45
+             * openpri : 313.08
+             * maxpri : 313.79
+             * minpri : 312.00
+             * limit : 0.07%
+             * yespri : 313.23
+             * totalvol : 55604.00
+             * time : 2019-06-27 23:43:15
              */
 
             private String variety;
@@ -1483,14 +1482,14 @@ public class SliverBean {
         public static class _$14Bean {
             /**
              * variety : IAU99.99
-             * latestpri : 310.35
-             * openpri : 311.00
-             * maxpri : 312.20
-             * minpri : 310.35
-             * limit : -0.37%
-             * yespri : 311.49
-             * totalvol : 104454.00
-             * time : 2019-06-27 15:11:14
+             * latestpri : 310.00
+             * openpri : 312.00
+             * maxpri : 312.00
+             * minpri : 310.00
+             * limit : -0.47%
+             * yespri : 311.47
+             * totalvol : 80.00
+             * time : 2019-06-27 23:43:13
              */
 
             private String variety;
@@ -1586,7 +1585,7 @@ public class SliverBean {
              * limit : --
              * yespri : 280.00
              * totalvol : --
-             * time : 2019-06-27 15:27:22
+             * time : 2019-06-27 22:12:23
              */
 
             private String variety;
@@ -1682,7 +1681,7 @@ public class SliverBean {
              * limit : --
              * yespri : 237.80
              * totalvol : --
-             * time : 2019-06-26 20:00:00
+             * time : 2019-06-27 19:50:01
              */
 
             private String variety;

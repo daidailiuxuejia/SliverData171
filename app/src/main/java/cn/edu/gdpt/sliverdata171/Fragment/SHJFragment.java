@@ -54,7 +54,7 @@ public class SHJFragment extends Fragment {
 
     public SHJFragment() {
         // Required empty public constructor
-        ;
+
     }
 
 
